@@ -5,7 +5,7 @@
       class="img-fluid"
     />
     <div class="container">
-      <Message>We dont use cookies, but we use ice cream. A lot</Message>
+      <Message>We don't use cookies, but we use ice cream. A lot</Message>
     </div>
   </div>
 </template>
