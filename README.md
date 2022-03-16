@@ -1,7 +1,6 @@
 # You know, I'm something of a programmer myself
 
-My first computer was a Commodore Vic 20 my father bought in early 80s. I was 6 years old and I just rememember that I loved to draw on the screen some kind of ascii art using the "print" command. Played videogames on my Commodore 64 in the years after and started to code some Basic programs on that awesome machine.
-Started to program in Turbo Pascal, then Visual Basic at school. 
+My first computer was a Commodore Vic 20 my father bought in early 80s. I was 6 years old and I just rememember that I loved to draw on the screen some kind of ascii art using the "print" command. Played videogames on my Commodore 64 in the years after and started to code some Basic programs on that awesome machine. Started to program in Turbo Pascal, then Visual Basic at school. Also Fortran and C, by myself.
 
 It was 1999 when I realized that this could have become my job, so I learned to develop applications in Visual Basic 6, after in Visual Basic .NET and finally in C#. I started at the meantime to develop web sites and web applications using HTML and Javascript. I was really proud when I coded a huge dynamic web site that showed CSS formatted XML files for my first big client.
 
