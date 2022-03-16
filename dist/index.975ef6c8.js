@@ -532,6 +532,8 @@ var _message = require("primevue/message");
 var _messageDefault = parcelHelpers.interopDefault(_message);
 var _tabmenu = require("primevue/tabmenu");
 var _tabmenuDefault = parcelHelpers.interopDefault(_tabmenu);
+var _button = require("primevue/button");
+var _buttonDefault = parcelHelpers.interopDefault(_button);
 // ----------- /PrimeVue ------
 // ----------- Vue Router ------
 var _vueRouter = require("vue-router");
@@ -546,6 +548,7 @@ app.use(_configDefault.default);
 app.component('Dialog', _dialogDefault.default);
 app.component('Message', _messageDefault.default);
 app.component('TabMenu', _tabmenuDefault.default);
+app.component('Button', _buttonDefault.default);
 const routes = [
     {
         path: '/',
@@ -568,7 +571,7 @@ app.use(router);
 // ----------- /Vue Router ------
 app.mount("#app");
 
-},{"vue":"gzxs9","@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR","./App.vue":"fYNyc","primevue/config":"kgz30","primevue/dialog":"k21H2","primevue/message":"1btEw","primevue/tabmenu":"api2c","./Home.vue":"65ypT","./About.vue":"6dMbE","./NotFound.vue":"9Bmpo","vue-router":"7eQtK"}],"gzxs9":[function(require,module,exports) {
+},{"vue":"gzxs9","@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR","./App.vue":"fYNyc","primevue/config":"kgz30","primevue/dialog":"k21H2","primevue/message":"1btEw","primevue/tabmenu":"api2c","./Home.vue":"65ypT","./About.vue":"6dMbE","./NotFound.vue":"9Bmpo","vue-router":"7eQtK","primevue/button":"cZhZG"}],"gzxs9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "compile", ()=>compile
@@ -9755,7 +9758,12 @@ exports.default = script;
 },{"script:./App.vue":"iiJmB","template:./App.vue":"evi43","custom:./App.vue":"h0MjM","@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR","style:./App.vue":"1aWWh"}],"iiJmB":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+var _footerVue = require("./Footer.vue");
+var _footerVueDefault = parcelHelpers.interopDefault(_footerVue);
 exports.default = {
+    components: {
+        Footer: _footerVueDefault.default
+    },
     data () {
         return {
             items: [
@@ -9768,22 +9776,68 @@ exports.default = {
                     label: "About",
                     icon: "pi pi-fw pi-info-circle",
                     to: "/about"
-                },
-                {
-                    label: "Edit",
-                    icon: "pi pi-fw pi-pencil"
-                },
-                {
-                    label: "Documentation",
-                    icon: "pi pi-fw pi-file"
-                },
-                {
-                    label: "Settings",
-                    icon: "pi pi-fw pi-cog"
                 }, 
             ]
         };
     }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR","./Footer.vue":"kXK0P"}],"kXK0P":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+let script;
+let initialize = ()=>{
+    script = require('script:./Footer.vue');
+    if (script.__esModule) script = script.default;
+    script.render = require('template:./Footer.vue').render;
+    require('custom:./Footer.vue').default(script);
+    script.__scopeId = 'data-v-0de5cd';
+    script.__file = "/Users/andreagiuggioli/Dev/Edgecrusher77/src/Footer.vue";
+};
+initialize();
+if (module.hot) {
+    script.__hmrId = '0de5cd-hmr';
+    module.hot.accept(()=>{
+        setTimeout(()=>{
+            initialize();
+            if (!__VUE_HMR_RUNTIME__.createRecord('0de5cd-hmr', script)) __VUE_HMR_RUNTIME__.reload('0de5cd-hmr', script);
+        }, 0);
+    });
+}
+exports.default = script;
+
+},{"template:./Footer.vue":"d5AKR","custom:./Footer.vue":"cLkey","@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR","script:./Footer.vue":"1O1vG"}],"d5AKR":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "render", ()=>render
+);
+var _vue = require("vue");
+const _hoisted_1 = {
+    role: "footer",
+    class: "p-2 text-center"
+};
+function render(_ctx, _cache) {
+    return _vue.openBlock(), _vue.createElementBlock("footer", _hoisted_1, _vue.toDisplayString(_ctx.title), 1 /* TEXT */ );
+}
+if (module.hot) module.hot.accept(()=>{
+    __VUE_HMR_RUNTIME__.rerender('0de5cd-hmr', render);
+});
+
+},{"vue":"gzxs9","@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR"}],"cLkey":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+let NOOP = ()=>{
+};
+exports.default = (script)=>{
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR"}],"1O1vG":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = {
+    props: [
+        "title"
+    ]
 };
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR"}],"evi43":[function(require,module,exports) {
@@ -9795,23 +9849,24 @@ var _vue = require("vue");
 const _withScopeId = (n)=>(_vue.pushScopeId("data-v-7c6349"), n = n(), _vue.popScopeId(), n)
 ;
 const _hoisted_1 = {
-    id: "app"
+    role: "main"
 };
-const _hoisted_2 = /*#__PURE__*/ _withScopeId(()=>/*#__PURE__*/ _vue.createElementVNode("div", null, null, -1 /* HOISTED */ )
-);
 function render(_ctx, _cache) {
     const _component_TabMenu = _vue.resolveComponent("TabMenu");
     const _component_router_view = _vue.resolveComponent("router-view");
-    return _vue.openBlock(), _vue.createElementBlock("div", _hoisted_1, [
+    const _component_Footer = _vue.resolveComponent("Footer");
+    return _vue.openBlock(), _vue.createElementBlock("main", _hoisted_1, [
         _vue.createVNode(_component_TabMenu, {
             model: _ctx.items
         }, null, 8 /* PROPS */ , [
             "model"
         ]),
-        _hoisted_2,
         _vue.createElementVNode("div", null, [
             _vue.createVNode(_component_router_view)
-        ])
+        ]),
+        _vue.createVNode(_component_Footer, {
+            title: "Giuggioli.net 2022"
+        })
     ]);
 }
 if (module.hot) module.hot.accept(()=>{
@@ -11996,21 +12051,29 @@ parcelHelpers.export(exports, "render", ()=>render
 );
 var _vue = require("vue");
 const _hoisted_1 = {
-    class: "container mx-auto m-5 shadow rounded p-3"
+    class: "text-center p-3"
 };
-const _hoisted_2 = /*#__PURE__*/ _vue.createElementVNode("h1", null, "Home", -1 /* HOISTED */ );
-const _hoisted_3 = /*#__PURE__*/ _vue.createTextVNode("Welcome to PrimeVue");
+const _hoisted_2 = /*#__PURE__*/ _vue.createElementVNode("img", {
+    src: "https://www.andrea-photo.com/assets/assets/images/bw3.jpg",
+    class: "img-fluid"
+}, null, -1 /* HOISTED */ );
+const _hoisted_3 = {
+    class: "container"
+};
+const _hoisted_4 = /*#__PURE__*/ _vue.createTextVNode("We dont use cookies, but we use ice cream. A lot");
 function render(_ctx, _cache) {
     const _component_Message = _vue.resolveComponent("Message");
     return _vue.openBlock(), _vue.createElementBlock("div", _hoisted_1, [
         _hoisted_2,
-        _vue.createVNode(_component_Message, null, {
-            default: _vue.withCtx(()=>[
-                    _hoisted_3
-                ]
-            ),
-            _: 1 /* STABLE */ 
-        })
+        _vue.createElementVNode("div", _hoisted_3, [
+            _vue.createVNode(_component_Message, null, {
+                default: _vue.withCtx(()=>[
+                        _hoisted_4
+                    ]
+                ),
+                _: 1 /* STABLE */ 
+            })
+        ])
     ]);
 }
 if (module.hot) module.hot.accept(()=>{
@@ -12055,30 +12118,70 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "render", ()=>render
 );
 var _vue = require("vue");
-const _hoisted_1 = /*#__PURE__*/ _vue.createElementVNode("h1", null, "About", -1 /* HOISTED */ );
-const _hoisted_2 = /*#__PURE__*/ _vue.createTextVNode(" Content ");
+const _hoisted_1 = {
+    class: "container mx-auto m-5 p-3"
+};
+const _hoisted_2 = /*#__PURE__*/ _vue.createElementVNode("h1", null, "You know, I'm something of a programmer myself", -1 /* HOISTED */ );
+const _hoisted_3 = /*#__PURE__*/ _vue.createElementVNode("p", null, " My first computer was a Commodore Vic 20 my father bought in early 80s. I was 6 years old and I just rememember that I loved to draw on the screen some kind of ascii art using the \"print\" command. Played videogames on my Commodore 64 in the years after and started to code some Basic programs on that awesome machine. Started to program in Turbo Pascal, then Visual Basic at school. Also Fortran and C, by myself. ", -1 /* HOISTED */ );
+const _hoisted_4 = /*#__PURE__*/ _vue.createElementVNode("p", null, " It was 1999 when I realized that this could have become my job, so I learned to develop applications in Visual Basic 6, after in Visual Basic .NET and finally in C#. I started at the meantime to develop web sites and web applications using HTML and Javascript. I was really proud when I coded a huge dynamic web site that showed CSS formatted XML files for my first big client. ", -1 /* HOISTED */ );
+const _hoisted_5 = /*#__PURE__*/ _vue.createElementVNode("p", null, " Starting from 2001 I always studied a lot and incremented my knowledge in every direction, mainly: .NET, SQL, Java. There were still java applets then and I can rememeber the nights on coding them, what a waste of time! ", -1 /* HOISTED */ );
+const _hoisted_6 = /*#__PURE__*/ _vue.createElementVNode("p", null, " In all these years I followed all the evolution of architectual and technical world for us \"programmers\": from SOAP Web Services to Json ones, from raw Javascript to JQuery (I still remember the first time I used it, and how it looked like the \"non plus ultra\" of front-end programming) and then to Node.js and all the client Frameworks and libraries like React and Vue. I still remember the moment when we said: ok it is not web hosting, now it's cloud; so we started to develop also for Azure. I rememer when we switched from VSS to Subversion (and Tortoise) then to Git. I remember all the issues Sql Server 7.0 had, how painful was to migrate our production databases to Sql Server 2005, all the Stored Procedures and Repositories written line by line, then the big switch to Hibernate and NHibernate, then finally to Entity Framework. I remember the first CQRS application I coded and all the years spent on studing OOP, Design Patterns, Algorithms, Architecture and every time I discovered and learned something new and useful, refactored or rewrited some applications to make them better. ", -1 /* HOISTED */ );
+const _hoisted_7 = /*#__PURE__*/ _vue.createElementVNode("p", null, " Last things I learned: React Native in 2019, Blazor and Dart + Flutter in 2021. Learning is fun! ", -1 /* HOISTED */ );
+const _hoisted_8 = {
+    class: "container p-3"
+};
+const _hoisted_9 = /*#__PURE__*/ _vue.createElementVNode("br", null, null, -1 /* HOISTED */ );
+const _hoisted_10 = /*#__PURE__*/ _vue.createElementVNode("br", null, null, -1 /* HOISTED */ );
 function render(_ctx, _cache) {
+    const _component_Button = _vue.resolveComponent("Button");
     const _component_Dialog = _vue.resolveComponent("Dialog");
-    return _vue.openBlock(), _vue.createElementBlock("div", null, [
-        _hoisted_1,
+    return _vue.openBlock(), _vue.createElementBlock("div", _hoisted_1, [
+        _hoisted_2,
+        _hoisted_3,
+        _hoisted_4,
+        _hoisted_5,
+        _hoisted_6,
+        _hoisted_7,
         _vue.createVNode(_component_Dialog, {
-            header: "Header",
+            header: "Contacts",
+            modal: "true",
+            position: "top",
             visible: _ctx.display,
-            "onUpdate:visible": _cache[0] || (_cache[0] = ($event)=>_ctx.display = $event
+            "onUpdate:visible": _cache[2] || (_cache[2] = ($event)=>_ctx.display = $event
             )
         }, {
             default: _vue.withCtx(()=>[
-                    _hoisted_2
+                    _vue.createElementVNode("div", _hoisted_8, [
+                        _vue.createVNode(_component_Button, {
+                            class: "w-100 p-button-rounded p-button-primary",
+                            label: "Linkedin",
+                            icon: "pi pi-linkedin",
+                            iconPos: "left",
+                            onClick: _cache[0] || (_cache[0] = ($event)=>_ctx.navigate('https://www.linkedin.com/in/andrea-g-a2b5048')
+                            )
+                        }),
+                        _hoisted_9,
+                        _hoisted_10,
+                        _vue.createVNode(_component_Button, {
+                            class: "w-100 p-button-rounded p-button-secondary",
+                            label: "Twitter",
+                            icon: "pi pi-twitter",
+                            iconPos: "left",
+                            onClick: _cache[1] || (_cache[1] = ($event)=>_ctx.navigate('https://mobile.twitter.com/edgecrusher77')
+                            )
+                        })
+                    ])
                 ]
             ),
             _: 1 /* STABLE */ 
         }, 8 /* PROPS */ , [
             "visible"
         ]),
-        _vue.createElementVNode("a", {
-            onClick: _cache[1] || (_cache[1] = ($event)=>_ctx.display = true
+        _vue.createVNode(_component_Button, {
+            label: "Contact me",
+            onClick: _cache[3] || (_cache[3] = ($event)=>_ctx.display = true
             )
-        }, "Show")
+        })
     ]);
 }
 if (module.hot) module.hot.accept(()=>{
@@ -12093,6 +12196,11 @@ exports.default = {
         return {
             display: false
         };
+    },
+    methods: {
+        navigate (url) {
+            window.open(url, "target=_blank");
+        }
     }
 };
 
@@ -15395,6 +15503,119 @@ parcelHelpers.defineInteropFlag(exports);
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR"}]},["1I1If","8lqZg"], "8lqZg", "parcelRequire94c2")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR"}],"cZhZG":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _ripple = require("primevue/ripple");
+var _rippleDefault = parcelHelpers.interopDefault(_ripple);
+var _vue = require("vue");
+var script = {
+    name: 'Button',
+    props: {
+        label: {
+            type: String
+        },
+        icon: {
+            type: String
+        },
+        iconPos: {
+            type: String,
+            default: 'left'
+        },
+        badge: {
+            type: String
+        },
+        badgeClass: {
+            type: String,
+            default: null
+        },
+        loading: {
+            type: Boolean,
+            default: false
+        },
+        loadingIcon: {
+            type: String,
+            default: 'pi pi-spinner pi-spin'
+        }
+    },
+    computed: {
+        buttonClass () {
+            return {
+                'p-button p-component': true,
+                'p-button-icon-only': this.icon && !this.label,
+                'p-button-vertical': (this.iconPos === 'top' || this.iconPos === 'bottom') && this.label,
+                'p-disabled': this.$attrs.disabled || this.loading,
+                'p-button-loading': this.loading,
+                'p-button-loading-label-only': this.loading && !this.icon && this.label
+            };
+        },
+        iconClass () {
+            return [
+                this.loading ? 'p-button-loading-icon ' + this.loadingIcon : this.icon,
+                'p-button-icon',
+                {
+                    'p-button-icon-left': this.iconPos === 'left' && this.label,
+                    'p-button-icon-right': this.iconPos === 'right' && this.label,
+                    'p-button-icon-top': this.iconPos === 'top' && this.label,
+                    'p-button-icon-bottom': this.iconPos === 'bottom' && this.label
+                }
+            ];
+        },
+        badgeStyleClass () {
+            return [
+                'p-badge p-component',
+                this.badgeClass,
+                {
+                    'p-badge-no-gutter': this.badge && String(this.badge).length === 1
+                }
+            ];
+        },
+        disabled () {
+            return this.$attrs.disabled || this.loading;
+        }
+    },
+    directives: {
+        'ripple': _rippleDefault.default
+    }
+};
+const _hoisted_1 = {
+    class: "p-button-label"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+    const _directive_ripple = _vue.resolveDirective("ripple");
+    return _vue.withDirectives((_vue.openBlock(), _vue.createBlock("button", {
+        class: $options.buttonClass,
+        type: "button",
+        disabled: $options.disabled
+    }, [
+        _vue.renderSlot(_ctx.$slots, "default", {
+        }, ()=>[
+                $props.loading && !$props.icon ? (_vue.openBlock(), _vue.createBlock("span", {
+                    key: 0,
+                    class: $options.iconClass
+                }, null, 2)) : _vue.createCommentVNode("", true),
+                $props.icon ? (_vue.openBlock(), _vue.createBlock("span", {
+                    key: 1,
+                    class: $options.iconClass
+                }, null, 2)) : _vue.createCommentVNode("", true),
+                _vue.createVNode("span", _hoisted_1, _vue.toDisplayString($props.label || ' '), 1),
+                $props.badge ? (_vue.openBlock(), _vue.createBlock("span", {
+                    key: 2,
+                    class: $options.badgeStyleClass
+                }, _vue.toDisplayString($props.badge), 3)) : _vue.createCommentVNode("", true)
+            ]
+        )
+    ], 10, [
+        "disabled"
+    ])), [
+        [
+            _directive_ripple
+        ]
+    ]);
+}
+script.render = render;
+exports.default = script;
+
+},{"primevue/ripple":"27mBU","vue":"gzxs9","@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR"}]},["1I1If","8lqZg"], "8lqZg", "parcelRequire94c2")
 
 //# sourceMappingURL=index.975ef6c8.js.map

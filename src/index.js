@@ -7,11 +7,12 @@ import PrimeVue from 'primevue/config';
 import Dialog from 'primevue/dialog';
 import Message from 'primevue/message';
 import TabMenu from 'primevue/tabmenu';
-
+import Button from 'primevue/button';
 app.use(PrimeVue);
 app.component('Dialog', Dialog);
 app.component('Message', Message);
 app.component('TabMenu', TabMenu);
+app.component('Button', Button);
 // ----------- /PrimeVue ------
 
 // ----------- Vue Router ------
