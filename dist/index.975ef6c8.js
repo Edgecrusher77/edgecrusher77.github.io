@@ -12083,15 +12083,15 @@ const _hoisted_4 = /*#__PURE__*/ _withScopeId(()=>/*#__PURE__*/ _vue.createEleme
 );
 const _hoisted_5 = /*#__PURE__*/ _vue.createTextVNode("Some words on me");
 const _hoisted_6 = {
-    class: "container m-1 mt-3"
+    class: "container mx-auto m-1 mt-3 text-center p-4"
 };
 const _hoisted_7 = /*#__PURE__*/ _withScopeId(()=>/*#__PURE__*/ _vue.createElementVNode("figure", {
-        class: "m-2 p-2"
+        class: "m-2 p-1 mx-auto w-75"
     }, [
         /*#__PURE__*/ _vue.createElementVNode("blockquote", {
             class: "blockquote"
         }, [
-            /*#__PURE__*/ _vue.createElementVNode("p", null, " Nothing to see here yet. When I'll have more free time, maybe I'll build a serious web site ")
+            /*#__PURE__*/ _vue.createElementVNode("p", null, " Nothing to see here yet. When I'll have more free time, maybe I'll build a serious web site. ")
         ]),
         /*#__PURE__*/ _vue.createElementVNode("figcaption", {
             class: "blockquote-footer text-end"
