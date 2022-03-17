@@ -9,8 +9,8 @@
         >
       </div>
     </div>
-    <div class="container m-1 mt-3">
-      <figure class="m-2 p-2">
+    <div class="container m-1 mt-3 text-center p-5">
+      <figure class="m-2 p-1 mx-auto w-75">
         <blockquote class="blockquote">
           <p>
             Nothing to see here yet. When I'll have more free time, maybe I'll
