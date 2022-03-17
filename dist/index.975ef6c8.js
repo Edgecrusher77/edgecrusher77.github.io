@@ -9790,6 +9790,7 @@ let initialize = ()=>{
     script = require('script:./Footer.vue');
     if (script.__esModule) script = script.default;
     script.render = require('template:./Footer.vue').render;
+    script.__cssModules = require('style:./Footer.vue').default;
     require('custom:./Footer.vue').default(script);
     script.__scopeId = 'data-v-0de5cd';
     script.__file = "/Users/andreagiuggioli/Dev/Edgecrusher77/src/Footer.vue";
@@ -9806,18 +9807,19 @@ if (module.hot) {
 }
 exports.default = script;
 
-},{"template:./Footer.vue":"d5AKR","custom:./Footer.vue":"cLkey","@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR","script:./Footer.vue":"1O1vG"}],"d5AKR":[function(require,module,exports) {
+},{"template:./Footer.vue":"d5AKR","custom:./Footer.vue":"cLkey","@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR","script:./Footer.vue":"1O1vG","style:./Footer.vue":"jA9Xq"}],"d5AKR":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "render", ()=>render
 );
 var _vue = require("vue");
+const _withScopeId = (n)=>(_vue.pushScopeId("data-v-0de5cd"), n = n(), _vue.popScopeId(), n)
+;
 const _hoisted_1 = {
-    role: "footer",
-    class: "p-2 text-center"
+    class: "footer p-2 text-center"
 };
 function render(_ctx, _cache) {
-    return _vue.openBlock(), _vue.createElementBlock("footer", _hoisted_1, _vue.toDisplayString(_ctx.title), 1 /* TEXT */ );
+    return _vue.openBlock(), _vue.createElementBlock("div", _hoisted_1, _vue.toDisplayString(_ctx.title), 1 /* TEXT */ );
 }
 if (module.hot) module.hot.accept(()=>{
     __VUE_HMR_RUNTIME__.rerender('0de5cd-hmr', render);
@@ -9840,7 +9842,7 @@ exports.default = {
     ]
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR"}],"evi43":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR"}],"jA9Xq":[function() {},{}],"evi43":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "render", ()=>render
@@ -9849,24 +9851,36 @@ var _vue = require("vue");
 const _withScopeId = (n)=>(_vue.pushScopeId("data-v-7c6349"), n = n(), _vue.popScopeId(), n)
 ;
 const _hoisted_1 = {
+    id: "supercontainer"
+};
+const _hoisted_2 = {
+    id: "maincontainer",
     role: "main"
+};
+const _hoisted_3 = {
+    role: "footer"
 };
 function render(_ctx, _cache) {
     const _component_TabMenu = _vue.resolveComponent("TabMenu");
     const _component_router_view = _vue.resolveComponent("router-view");
     const _component_Footer = _vue.resolveComponent("Footer");
-    return _vue.openBlock(), _vue.createElementBlock("main", _hoisted_1, [
-        _vue.createVNode(_component_TabMenu, {
-            model: _ctx.items
-        }, null, 8 /* PROPS */ , [
-            "model"
+    return _vue.openBlock(), _vue.createElementBlock("div", _hoisted_1, [
+        _vue.createElementVNode("header", null, [
+            _vue.createVNode(_component_TabMenu, {
+                model: _ctx.items,
+                class: "mt-2 ml-2"
+            }, null, 8 /* PROPS */ , [
+                "model"
+            ])
         ]),
-        _vue.createElementVNode("div", null, [
+        _vue.createElementVNode("main", _hoisted_2, [
             _vue.createVNode(_component_router_view)
         ]),
-        _vue.createVNode(_component_Footer, {
-            title: "Giuggioli.net 2022"
-        })
+        _vue.createElementVNode("footer", _hoisted_3, [
+            _vue.createVNode(_component_Footer, {
+                title: "Giuggioli.net 2022"
+            })
+        ])
     ]);
 }
 if (module.hot) module.hot.accept(()=>{
@@ -12017,9 +12031,10 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 let script;
 let initialize = ()=>{
-    script = {
-    };
+    script = require('script:./Home.vue');
+    if (script.__esModule) script = script.default;
     script.render = require('template:./Home.vue').render;
+    script.__cssModules = require('style:./Home.vue').default;
     require('custom:./Home.vue').default(script);
     script.__scopeId = 'data-v-dc4b17';
     script.__file = "/Users/andreagiuggioli/Dev/Edgecrusher77/src/Home.vue";
@@ -12036,7 +12051,7 @@ if (module.hot) {
 }
 exports.default = script;
 
-},{"custom:./Home.vue":"2sY1L","@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR","template:./Home.vue":"86cbq"}],"2sY1L":[function(require,module,exports) {
+},{"custom:./Home.vue":"2sY1L","@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR","template:./Home.vue":"86cbq","style:./Home.vue":"diYKz","script:./Home.vue":"4NGoX"}],"2sY1L":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 let NOOP = ()=>{
@@ -12050,25 +12065,65 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "render", ()=>render
 );
 var _vue = require("vue");
+const _withScopeId = (n)=>(_vue.pushScopeId("data-v-dc4b17"), n = n(), _vue.popScopeId(), n)
+;
 const _hoisted_1 = {
-    class: "text-center p-3"
+    class: "text-center imagenized p-5"
 };
-const _hoisted_2 = /*#__PURE__*/ _vue.createElementVNode("img", {
-    src: "https://www.andrea-photo.com/assets/assets/images/bw3.jpg",
-    class: "img-fluid"
-}, null, -1 /* HOISTED */ );
-const _hoisted_3 = {
-    class: "container"
+const _hoisted_2 = {
+    class: "col-md-5 p-lg-5 mx-auto my-5 text-white"
 };
-const _hoisted_4 = /*#__PURE__*/ _vue.createTextVNode("We dont use cookies, but we use ice cream. A lot");
+const _hoisted_3 = /*#__PURE__*/ _withScopeId(()=>/*#__PURE__*/ _vue.createElementVNode("h1", {
+        class: "display-4 fw-normal"
+    }, "Welcome", -1 /* HOISTED */ )
+);
+const _hoisted_4 = /*#__PURE__*/ _withScopeId(()=>/*#__PURE__*/ _vue.createElementVNode("p", {
+        class: "lead fw-normal"
+    }, "Just a programmer's website", -1 /* HOISTED */ )
+);
+const _hoisted_5 = /*#__PURE__*/ _vue.createTextVNode("Some words on me");
+const _hoisted_6 = {
+    class: "container m-1 mt-3"
+};
+const _hoisted_7 = /*#__PURE__*/ _withScopeId(()=>/*#__PURE__*/ _vue.createElementVNode("figure", {
+        class: "m-2 p-2"
+    }, [
+        /*#__PURE__*/ _vue.createElementVNode("blockquote", {
+            class: "blockquote"
+        }, [
+            /*#__PURE__*/ _vue.createElementVNode("p", null, " Nothing to see here yet. When I'll have more free time, maybe I'll build a serious web site ")
+        ]),
+        /*#__PURE__*/ _vue.createElementVNode("figcaption", {
+            class: "blockquote-footer text-end"
+        }, "Me")
+    ], -1 /* HOISTED */ )
+);
+const _hoisted_8 = /*#__PURE__*/ _vue.createTextVNode("We don't use cookies, but we use ice cream. A lot");
 function render(_ctx, _cache) {
+    const _component_router_link = _vue.resolveComponent("router-link");
     const _component_Message = _vue.resolveComponent("Message");
-    return _vue.openBlock(), _vue.createElementBlock("div", _hoisted_1, [
-        _hoisted_2,
-        _vue.createElementVNode("div", _hoisted_3, [
+    return _vue.openBlock(), _vue.createElementBlock("div", null, [
+        _vue.createElementVNode("div", _hoisted_1, [
+            _vue.createElementVNode("div", _hoisted_2, [
+                _hoisted_3,
+                _hoisted_4,
+                _vue.createVNode(_component_router_link, {
+                    to: "/about",
+                    class: "btn btn-secondary"
+                }, {
+                    default: _vue.withCtx(()=>[
+                            _hoisted_5
+                        ]
+                    ),
+                    _: 1 /* STABLE */ 
+                })
+            ])
+        ]),
+        _vue.createElementVNode("div", _hoisted_6, [
+            _hoisted_7,
             _vue.createVNode(_component_Message, null, {
                 default: _vue.withCtx(()=>[
-                        _hoisted_4
+                        _hoisted_8
                     ]
                 ),
                 _: 1 /* STABLE */ 
@@ -12080,7 +12135,18 @@ if (module.hot) module.hot.accept(()=>{
     __VUE_HMR_RUNTIME__.rerender('dc4b17-hmr', render);
 });
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR","vue":"gzxs9"}],"6dMbE":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR","vue":"gzxs9"}],"diYKz":[function() {},{}],"4NGoX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = {
+    data () {
+        return {
+            what: false
+        };
+    }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"2SnKR"}],"6dMbE":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 let script;
@@ -12128,10 +12194,8 @@ const _hoisted_5 = /*#__PURE__*/ _vue.createElementVNode("p", null, " Starting f
 const _hoisted_6 = /*#__PURE__*/ _vue.createElementVNode("p", null, " In all these years I followed all the evolution of architectual and technical world for us \"programmers\": from SOAP Web Services to Json ones, from raw Javascript to JQuery (I still remember the first time I used it, and how it looked like the \"non plus ultra\" of front-end programming) and then to Node.js and all the client Frameworks and libraries like React and Vue. I still remember the moment when we said: ok it is not web hosting, now it's cloud; so we started to develop also for Azure. I rememer when we switched from VSS to Subversion (and Tortoise) then to Git. I remember all the issues Sql Server 7.0 had, how painful was to migrate our production databases to Sql Server 2005, all the Stored Procedures and Repositories written line by line, then the big switch to Hibernate and NHibernate, then finally to Entity Framework. I remember the first CQRS application I coded and all the years spent on studing OOP, Design Patterns, Algorithms, Architecture and every time I discovered and learned something new and useful, refactored or rewrited some applications to make them better. ", -1 /* HOISTED */ );
 const _hoisted_7 = /*#__PURE__*/ _vue.createElementVNode("p", null, " Last things I learned: React Native in 2019, Blazor and Dart + Flutter in 2021. Learning is fun! ", -1 /* HOISTED */ );
 const _hoisted_8 = {
-    class: "container p-3"
+    class: "container p-3 text-center"
 };
-const _hoisted_9 = /*#__PURE__*/ _vue.createElementVNode("br", null, null, -1 /* HOISTED */ );
-const _hoisted_10 = /*#__PURE__*/ _vue.createElementVNode("br", null, null, -1 /* HOISTED */ );
 function render(_ctx, _cache) {
     const _component_Button = _vue.resolveComponent("Button");
     const _component_Dialog = _vue.resolveComponent("Dialog");
@@ -12145,25 +12209,24 @@ function render(_ctx, _cache) {
         _vue.createVNode(_component_Dialog, {
             header: "Contacts",
             modal: "true",
-            position: "top",
+            position: "bottom",
             visible: _ctx.display,
             "onUpdate:visible": _cache[2] || (_cache[2] = ($event)=>_ctx.display = $event
-            )
+            ),
+            class: "w-75"
         }, {
             default: _vue.withCtx(()=>[
                     _vue.createElementVNode("div", _hoisted_8, [
                         _vue.createVNode(_component_Button, {
-                            class: "w-100 p-button-rounded p-button-primary",
+                            class: "p-button-rounded p-button-primary m-3",
                             label: "Linkedin",
                             icon: "pi pi-linkedin",
                             iconPos: "left",
                             onClick: _cache[0] || (_cache[0] = ($event)=>_ctx.navigate('https://www.linkedin.com/in/andrea-g-a2b5048')
                             )
                         }),
-                        _hoisted_9,
-                        _hoisted_10,
                         _vue.createVNode(_component_Button, {
-                            class: "w-100 p-button-rounded p-button-secondary",
+                            class: "p-button-rounded p-button-secondary m-3",
                             label: "Twitter",
                             icon: "pi pi-twitter",
                             iconPos: "left",

@@ -52,20 +52,20 @@
     <Dialog
       header="Contacts"
       modal="true"
-      position="top"
+      position="bottom"
       v-model:visible="display"
+      class="w-75"
     >
-      <div class="container p-3">
+      <div class="container p-3 text-center">
         <Button
-          class="w-100 p-button-rounded p-button-primary"
+          class="p-button-rounded p-button-primary m-3"
           label="Linkedin"
           icon="pi pi-linkedin"
           iconPos="left"
           @click="navigate('https://www.linkedin.com/in/andrea-g-a2b5048')"
         />
-        <br /><br />
         <Button
-          class="w-100 p-button-rounded p-button-secondary"
+          class="p-button-rounded p-button-secondary m-3"
           label="Twitter"
           icon="pi pi-twitter"
           iconPos="left"

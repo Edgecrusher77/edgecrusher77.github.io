@@ -1,11 +1,15 @@
 <template>
-  <main role="main">
-    <TabMenu :model="items" />
-    <div>
+  <div id="supercontainer">
+    <header>
+      <TabMenu :model="items" class="mt-2 ml-2" />
+    </header>
+    <main id="maincontainer" role="main">
       <router-view></router-view>
-    </div>
-    <Footer title="Giuggioli.net 2022" />
-  </main>
+    </main>
+    <footer role="footer">
+      <Footer title="Giuggioli.net 2022" />
+    </footer>
+  </div>
 </template>
 
 <script>
@@ -32,13 +36,14 @@ export default {
   font-size: 1rem;
   font-weight: normal;
 }
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  background-color: #f5f5f5;
+#supercontainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#maincontainer {
+  flex-grow: 1;
+  background-color: var(--surface-0);
 }
 </style>
 
