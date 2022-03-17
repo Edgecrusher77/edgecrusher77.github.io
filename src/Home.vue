@@ -19,7 +19,7 @@
         </blockquote>
         <figcaption class="blockquote-footer text-end">Me</figcaption>
       </figure>
-      <Message>We don't use cookies, but we use ice cream. A lot</Message>
+      <Message>We don't use cookies, but we use ice cream. A lot!</Message>
     </div>
   </div>
 </template>

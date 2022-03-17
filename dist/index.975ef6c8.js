@@ -12098,7 +12098,7 @@ const _hoisted_7 = /*#__PURE__*/ _withScopeId(()=>/*#__PURE__*/ _vue.createEleme
         }, "Me")
     ], -1 /* HOISTED */ )
 );
-const _hoisted_8 = /*#__PURE__*/ _vue.createTextVNode("We don't use cookies, but we use ice cream. A lot");
+const _hoisted_8 = /*#__PURE__*/ _vue.createTextVNode("We don't use cookies, but we use ice cream. A lot!");
 function render(_ctx, _cache) {
     const _component_router_link = _vue.resolveComponent("router-link");
     const _component_Message = _vue.resolveComponent("Message");
