@@ -8,7 +8,12 @@ import TheWelcome from '@/components/TheWelcome.vue'
       <div class="col-md-5 p-lg-5 mx-auto my-5 text-white">
         <h1 class="display-4 fw-normal">Welcome</h1>
         <p class="lead fw-normal">Just a programmer's website</p>
-        <RouterLink to="/about" class="btn btn-secondary">Some words on me</RouterLink>
+        <Button
+          label="Some words on me..."
+          icon="pi pi-bolt"
+          class="p-button-sm m-2"
+          @click="$router.push('about')"
+        />
       </div>
     </div>
     <TheWelcome />

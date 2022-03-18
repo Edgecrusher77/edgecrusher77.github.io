@@ -31,9 +31,10 @@
       technical world for us "programmers": from SOAP Web Services to Json ones,
       from raw Javascript to JQuery (I still remember the first time I used it,
       and how it looked like the "non plus ultra" of front-end programming) and
-      then to Node.js and all the client Frameworks and libraries like React and
-      Vue. I still remember the moment when we said: ok it is not web hosting,
-      now it's cloud; so we started to develop also for Azure. I rememer when we
+      then we started with to Node.js and all the client Frameworks like React and
+      Vue (I really love Vue!). I still remember the moment when we said: ok it is not web hosting,
+      now it's called cloud, it's the same but different...and everyone started to develop for Azure and AWS.
+      <br />I rememer when we
       switched from VSS to Subversion (and Tortoise) then to Git. I remember all
       the issues Sql Server 7.0 had, how painful was to migrate our production
       databases to Sql Server 2005, all the Stored Procedures and Repositories
@@ -45,8 +46,8 @@
     </p>
 
     <p>
-      Last things I learned: React Native in 2019, Blazor and Dart + Flutter in
-      2021. Learning is fun!
+      During the last ten years my job focused on Project management, Team leading and other "managing activities", but I've never left also pure programming, because I really love it.
+      Last things I learned, in the last 2 years, are React Native, Blazor, Dart and Flutter.
     </p>
 
     <Dialog header="Contacts" modal="true" position="bottom" v-model:visible="display" class="w-75">
@@ -85,6 +86,4 @@ function navigate(url) {
 /*counter.count++
 counter.$patch({ count: counter.count + 1 })*/
 counter.increment()
-console.log(counter.count);
-  //const howMany = ref(counter.count);
 </script>

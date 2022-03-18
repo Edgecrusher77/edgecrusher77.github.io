@@ -13,6 +13,10 @@
       </blockquote>
       <figcaption class="blockquote-footer text-end">Me</figcaption>
     </figure>
-    <Message>We don't use cookies, but we use ice cream. A lot!</Message>
+    <Message
+      :life="5000"
+      :sticky="false"
+      style="background-color: var(--primary-color); color:var(--primary-color-text);"
+    >We don't use cookies, but we use ice cream. A lot!</Message>
   </div>
 </template>
