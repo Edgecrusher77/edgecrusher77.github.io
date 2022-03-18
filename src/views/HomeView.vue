@@ -16,7 +16,7 @@ import TheWelcome from '@/components/TheWelcome.vue'
 </template>
 <style scoped>
 .imagenized {
-  background-image: url("./img/bg4.jpg");
+  background-image: url("/img/bg4.jpg");
   background-size: cover;
 }
 </style>
